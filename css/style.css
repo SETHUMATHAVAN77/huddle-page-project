@@ -1,0 +1,252 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 18px;
+}
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+h1,h2,h3,p{
+  font-family: var(--ff-open-sans);
+}
+:root{
+  --clr-pink:hsl(322, 100%, 66%);
+  --clr-pale-cyan:hsl(193, 100%, 96%);
+  --clr-dark-cyan:hsl(192, 100%, 9%);
+  --cld-gray-blue:hsl(208, 11%, 55%);
+  --ff-open-sans: 'Open Sans', sans-serif;
+  --ff-poppins: 'Poppins', sans-serif;
+}
+body{
+  font-family:var(--ff-poppins);
+}
+.btn{
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  font-size: 1.15rem;
+  font-weight: 700;
+  box-shadow: 5px 5px 5px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+.btn-light{
+  background-color:#ffff;
+  color: var(--clr-dark-cyan);
+  border: none;
+}
+.btn-pink{
+  background-color: var(--clr-pink);
+  color: #ffff;
+  border: none;
+
+}
+.header{
+background-image: url('../images/bg-hero-desktop.svg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+padding: 0 1.5rem;
+}
+.nav-bar{
+  height: 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo{
+  width: 140px;
+}
+.hero-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  text-align: center;
+}
+.hero-left-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+.main-heading{
+  font-size: 2.25rem;
+  font-weight: 700;  
+}
+.hero-description
+{
+  font-weight: 400;
+}
+
+main{
+  padding: 0 2rem;
+  margin: 2rem auto;
+}
+.section{
+  background-color: #ffff;
+  padding: 1.5rem;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.25), -3px -3px 3px rgba(0,0,0,0.25);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  margin: 2rem auto;
+}
+.section-title{
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+.section-description{
+  margin-top: 0.5rem;
+}
+.section-cta{
+  background-color: #ffff;
+  padding: 3rem 1.5rem;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.25), -3px -3px 3px rgba(0,0,0,0.25);
+  border-radius: 10px;
+  text-align: center;
+  margin: 2rem auto;
+  margin-bottom: -6rem;
+  position: relative;
+  z-index: 10;
+}
+.footer{
+  padding-top: 3.5rem;
+  background-color: var(--clr-dark-cyan);
+  color: white;
+  
+}
+.footer-address{
+  padding: 5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+.footer-logo-container{
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom:-7rem;
+  color: #ffff;
+}
+.footer-image{
+  width: 10px;
+  height: 10px;
+}
+.location{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  
+}
+.mobile{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+  
+}
+.email{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+.footer-mobile-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1rem;
+}
+.list-items{
+  font-size: 1rem;
+  font-family: var(--ff-open-sans);
+  font-weight: 400;
+  margin: 1rem 1.5rem;
+}
+.footer-website{
+  text-align: center;
+  font-family: var(--ff-open-sans);
+  font-size: 0.7rem;
+}
+.footer-icon{
+  margin-left: 3rem;
+  margin-bottom: 1.5rem;
+  margin: 50%;
+  
+}
+
+.footer-social-icon{
+  font-size: 2rem;
+  margin: 1rem 0.1rem;
+  padding: 1rem;
+  border-radius: 50%;
+  border: 2px solid var(--clr-pale-cyan);
+}
+.footer-copy{
+  text-align: center;
+}
+@media screen and (min-width: 768px){
+  .header{
+    background-image: url('../images/bg-hero-desktop.svg');
+  }
+  .nav-bar{
+    width: 80%;
+    margin: auto;
+  }
+  .hero-section{
+    flex-direction: row;
+    width: 80%;
+    margin: 2rem auto;
+    gap: 2rem;
+  }
+  .hero-left-container{
+    align-items: flex-start;
+    text-align: left;
+  }
+  .section{
+    flex-direction: row; 
+    width: 85%;
+  }
+  .section-cta{
+    width: 60%;
+  }
+  .footer-address{
+    flex-basis: 35%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    
+  }
+  .footer-about{
+    flex-basis: 10%;
+    
+  }
+  .footer.more{
+    flex-basis: 10%;
+  }
+  .footer-website{
+    flex-basis: 45%;
+  }
+}
